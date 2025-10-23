@@ -122,7 +122,7 @@ namespace Parcial_2_Problema_2_Software_4
 
         public void modificar(string codigo, string nombre, string autor, string paginas, string precio, string genero, string codigo2)
         {
-            com = new SqlCommand("UPDATE Libreria SET Codigo = " + codigo + ",Nombre = '" + nombre + "',Autor = '" + autor + "',Paginas = " + paginas + ",Precio = " + codigo + ",Genero = '" + genero + "' WHERE Codigo = " + codigo2 + ";", conexionBD.getMiConexion());
+            com = new SqlCommand("UPDATE Libreria SET Codigo = " + codigo + ",Nombre = '" + nombre + "',Autor = '" + autor + "',Paginas = " + paginas + ",Precio = " + precio + ",Genero = '" + genero + "' WHERE Codigo = " + codigo2 + ";", conexionBD.getMiConexion());
             com.ExecuteNonQuery();
         }
 
